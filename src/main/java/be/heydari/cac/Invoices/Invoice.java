@@ -18,6 +18,9 @@ public class Invoice extends AbstractDocument {
     private String amount;
     private Byte[] content;
 
+    public Invoice() {
+    }
+
     public Invoice(String desc, String customer, String amount, Byte[] content) {
         this.desc = desc;
         this.customer = customer;
@@ -56,6 +59,7 @@ public class Invoice extends AbstractDocument {
     public void setContent(Byte[] content) {
         this.content = content;
     }
+
 
     @Override
     public boolean equals(Object o) {
